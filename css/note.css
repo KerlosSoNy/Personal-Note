@@ -1,0 +1,252 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .all {
+        margin-left: 0.25rem;
+        padding: 0px;
+        height: 100vh;
+    }
+    
+    .showingProfile,
+    .showingnotes {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    
+    .personalData {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+    }
+    
+    .personalData::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 2px;
+        height: 10vh;
+        background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+        animation: upAndDown 4s linear infinite;
+    }
+    
+    @keyframes upAndDown {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(90vh)
+        }
+        100% {
+            transform: translate(0px);
+        }
+    }
+    
+    .userName {
+        text-align: start;
+        font-size: 32px;
+        color: blueviolet;
+        margin-bottom: 5%;
+        padding-top: 10%;
+    }
+    
+    .buttonsDiv {
+        padding-bottom: 5%;
+    }
+    
+    .mainProfile {
+        padding: 4%;
+    }
+    
+    .mainProfile p {
+        font-weight: 400;
+        color: blueviolet;
+        padding-bottom: 4%;
+        padding-left: 2%;
+        margin-left: 0%;
+        border-bottom: 1px solid;
+    }
+    
+    .mainProfile span {
+        margin-left: 0px;
+        padding: 0px;
+        font-weight: 600;
+    }
+    
+    .clearALlNotes {
+        padding: 1% 0%;
+    }
+    
+    .personalData button {
+        border: 1px solid rgba(0, 0, 0, 0.203);
+        font-weight: 400;
+        padding: 3px;
+        background-color: transparent;
+        color: blueviolet;
+    }
+    
+    .personalData a {
+        text-decoration: none;
+        color: blueviolet;
+    }
+    
+    .personalData a:focus-visible {
+        border: none;
+    }
+    
+    .showingAddNote h2 {
+        color: blueviolet;
+        padding: 3%;
+    }
+    
+    .showingnotes h2 {
+        padding-top: 3%;
+        color: blueviolet;
+    }
+    
+    .notes {
+        padding: 4% 0%;
+    }
+    
+    .singleNote {
+        position: relative;
+        width: 100%!important;
+        padding: 4%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    
+    .singleNote h2 {
+        padding: 0% 4% 1% 2%;
+        width: fit-content;
+    }
+    
+    .singleNote span {
+        padding-left: 0%;
+        color: blueviolet;
+    }
+    
+    .bodyofNote {
+        color: rgb(90, 90, 90);
+        padding-top: 0%;
+        padding-left: 5%;
+    }
+    
+    .deleteNote {
+        position: absolute;
+        right: 10%;
+        position: absolute;
+        right: 0px;
+        width: 10%;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        color: blueviolet;
+    }
+    
+    .editNote {
+        position: absolute;
+        right: 10%!important;
+        position: absolute;
+        right: 0px;
+        width: 10%;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        color: blueviolet;
+    }
+    
+    .addForm {
+        width: 99%;
+        position: relative;
+        padding: 3%;
+    }
+    
+    .addForm input {
+        margin: 1% 0% 4% 4%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .addForm textarea {
+        width: 90%;
+        height: fit-content;
+        margin: 1% 0% 6% 4%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 1%;
+    }
+    
+    .addForm textarea::placeholder,
+    .addForm input::placeholder {
+        color: black;
+    }
+    
+    .addForm button {
+        position: absolute;
+        right: 0px;
+        bottom: -15px;
+        width: 25%;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        color: blueviolet;
+    }
+    
+    .addForm label {
+        color: blueviolet;
+        font-weight: 500;
+    }
+    
+    .spanno {
+        color: blueviolet;
+        font-weight: 500;
+        font-size: 20px;
+        padding-left: 5%;
+    }
+    
+    .headofNote {
+        background-color: transparent;
+        border: none;
+        color: blueviolet;
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .bodyofNote {
+        background-color: transparent;
+        border: none;
+        color: black;
+        display: block;
+        width: 70%;
+        font-size: 17px;
+    }
+    
+    @media (min-width:200px) and (max-width:740px) {
+        .all {
+            margin-left: 0.03rem!important;
+        }
+        .personalData {
+            justify-content: start;
+            height: unset;
+            border: none;
+            height: 2%;
+        }
+        .userName {
+            text-align: center;
+        }
+        .buttonsDiv {
+            padding-bottom: 0%;
+        }
+        .secondDIv .showingProfile,
+        .showingnotes {
+            height: unset;
+            overflow-y: unset;
+        }
+        .showingnotes h2 {
+            color: blueviolet;
+        }
+        .personalData::before {
+            display: none;
+        }
+    }

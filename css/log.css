@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainCont {
+    padding-top: 1rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    color: blueviolet;
+    padding: 3rem 0rem;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.log_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log_form form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.log_form label {
+    width: 60%;
+    font-size: 19px;
+    padding-bottom: 5px;
+    color: blueviolet;
+}
+
+.log_form input {
+    width: 60%;
+    display: block;
+    box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 4%;
+    padding: 1%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.log_form button {
+    display: block;
+    width: 15%;
+    margin: 2% 2% 2% 2%;
+    padding: 1% 0.5%;
+    border: transparent;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+}
+
+@media (min-width:200px) and (max-width:299px) {
+    .mainCont {
+        padding-top: 6rem;
+    }
+    .log_form {
+        width: 100%;
+    }
+    .log_form form {
+        width: 100%;
+    }
+    .log_form label {
+        width: 100%;
+    }
+    .log_form input {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+    .log_form button {
+        margin-top: 5%;
+        width: 50%;
+    }
+}
+
+@media (min-width:300px) and (max-width:600px) {
+    .mainCont {
+        padding-top: 8rem;
+    }
+    .log_form form {
+        width: 100%;
+    }
+    .log_form label {
+        font-size: medium;
+        font-weight: 600;
+        margin: 1%;
+        padding-left: 2%;
+        width: 100%;
+    }
+    .log_form input {
+        height: 45px;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        border: none;
+        width: 95%;
+        padding-bottom: 1%;
+    }
+    .log_form button {
+        width: 50%;
+        padding: 2% 1%;
+        margin: 3% 0%;
+        font-size: 20px;
+    }
+}
+
+@media (min-height:800px) and (max-height:950px) {
+    .mainCont {
+        padding-top: 10rem;
+    }
+    .title h2 {
+        font-size: 2.5rem;
+    }
+    .log_form button {
+        width: 50%;
+        padding: 2% 1%;
+        margin: 10% 0%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:601px) and (max-width:880px) {
+    .mainCont {
+        padding-top: 8rem;
+    }
+    .title {
+        margin-top: 10%;
+        margin-bottom: 2%;
+    }
+    .log_form form {
+        margin-top: 4%;
+        width: 85%;
+    }
+    .log_form label {
+        font-size: medium;
+        font-weight: 600;
+        margin: 1%;
+        padding-left: 2%;
+        width: 100%;
+    }
+    .log_form input {
+        width: 100%;
+        margin-bottom: 7%;
+    }
+    .log_form label {
+        margin: 1%;
+    }
+    .log_form button {
+        width: 50%;
+        padding: 2% 1%;
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
+}

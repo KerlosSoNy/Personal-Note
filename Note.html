@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/note.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- FontAwsome CSS -->
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-xl all row">
+        <div class="container personalData col-12 col-lg-3 col-md-3">
+            <div class="row col-12">
+                <h2 class="userName">Hello, Kero Magdy</h2>
+            </div>
+            <div class="row col-12 buttonsDiv">
+                <button class="showProfileButt col-4 col-lg-12 col-md-12">Profile</button>
+                <button class="addNotePage col-4 col-lg-12 col-md-12"> New Note</button>
+                <button class="showNotsButton col-4 col-lg-12 col-md-12">All Notes</button>
+                <button class="clearALlNotes col-6 col-lg-12 col-md-12">Clear All Notes</button>
+                <button class="col-6 col-lg-12 col-md-12"><a href="/index.html">log Out</a></button>
+            </div>
+        </div>
+        <div class="col-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9 secondDIv">
+            <!-- Showing Profile -->
+            <div class="row showingProfile d-none">
+                <div class="mainProfile">
+
+                </div>
+            </div>
+            <!-- Adding A New Note -->
+            <div class="row showingAddNote d-none">
+                <h2>Add New Note</h2>
+                <div class=" add">
+                    <form action="" class="row addForm">
+                        <label for="">Title</label>
+                        <input type="text" class="noteHeadInput col-6" size="20" placeholder="Min Length 8">
+                        <label for="">Body</label>
+                        <textarea name="noteBodyInput" id="noteBodyInput" class="noteBodyInput" cols="40" rows="3" placeholder="Min Length 20"></textarea>
+                        <Button>Add</Button>
+                    </form>
+                </div>
+            </div>
+            <!-- Showing Notes From Data Base -->
+            <div>
+                <div class="container showingnotes col-12 ">
+                    <h2>All Notes</h2>
+                    <div class="container notes col-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Js -->
+    <script src="/js/note.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- Fontawsome Js -->
+    <script src="/js/all.min.js"></script>
+</body>
+
+</html>
